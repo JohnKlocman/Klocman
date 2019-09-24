@@ -6,18 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" />
+    
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="wrapper">
-            <h1>Helo Bro!</h1>
-            <h2>You are beautiful</h2>
-        </div>
+    <div class="row" id="default-demo">
+        <div class="col-xs-4"><a href="http://placekitten.com/1000/600" target="_blank" class="thumbnail"><img
+                    src="http://placekitten.com/1000/600" alt=""></a></div>
+        <div class="col-xs-4"><a href="http://placekitten.com/1010/606" target="_blank" class="thumbnail"><img
+                    src="http://placekitten.com/1010/606" alt=""></a></div>
+        <div class="col-xs-4"><a href="http://placekitten.com/1060/636" target="_blank" class="thumbnail"><img
+                    src="http://placekitten.com/1060/636" alt=""></a></div>
     </div>
-
 </body>
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.js"></script>
+<script>
+$('#default-demo').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+});
 
+$('#default-demo').slickLightbox();
+</script>
 </html>
