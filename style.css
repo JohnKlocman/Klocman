@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background-color: rgb(54, 14, 119);
 }
 
 .wrapper {
-    background-color: black;
+    color: rgb(85, 70, 119);
+    background-color: rgba(44, 26, 56, 0.514);
 }
